@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-image:url(../images/bck.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Playball', cursive;
+}
+.main{
+    height:105vh;
+
+}
+.image{
+    background-image: url(../images/pic1.jpg);
+    background-size: 47%;
+    background-repeat:no-repeat;
+    height:105vh;
+    margin-left: 75vh;
+    margin-top:30vh;
+}
+.heading{
+    text-transform:upprcase;
+    font-size:3.5rem;
+    margin-left:79vh;
+    animation-name: Moveinleft;
+    animation-duration: 3s;
+    font-family: 'Berkshire Swash', cursive;
+    color:white;
+    margin-top:-127vh;
+    letter-spacing:2px;
+    
+    
+}
+@keyframes Moveinleft
+{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(1.2rem);
+    }
+    100%
+    {   opacity: 1;
+        transform:translate(1);
+    }
+}
+.form{
+
+    margin-left:82vh;
+    margin-top:15vh;
+}
+.book__form{
+    width:45%;
+    padding:1.5rem;
+    
+    }
+    
+.form__input{
+    font-size:1.5rem;
+    color:inherit;
+    padding:0.5rem 2rem;
+    border-radius: 3px;
+    background-color:rgb(245, 240, 240);
+    border:none;
+    font-family: inherit;
+    border-bottom: 5px solid transparent;
+    width:80%;
+    display:block;}
+    .form__input:focus
+{
+outline:none;
+box-shadow:0 1rem 2rem rgba(0, 0, 0, 0.15);
+border-bottom: 5px solid #7ed56f;
+} 
+.form__label{
+    font-size:1.8rem;
+    font-weight:700;
+    margin-left:1rem;
+    margin-top:0.7rem;
+    display:block;
+    color:white;
+    
+    }
+    .form__group:not(:last-child){
+        margin-bottom:2rem;
+    
+    }
+    .form::-webkit-input-placeholder{
+        color:#999;
+    }
+    .form__input:focus:invalid{
+        border-bottom: 5px solid #ff7730;
+    }
+    .btn:link,
+    .btn:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding:1rem 3rem;
+        display:inline-block;
+        border-radius: 10rem;
+        position:relative;
+        animation-duration: 3s;
+        animation-delay:0.75s;
+        animation-fill-mode: backwards;
+        font-size:1.6rem;
+        margin-left:3rem;
+    }
+    .btn-white{
+        background-color:white;
+        color:#777
+    }
+    .btn:hover{
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+    .btn-active{
+        transform:translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
+    .btn::after{
+        content:"";
+        display:inline-block;
+        height:100%;
+        width:100%;
+        border-radius:10rem;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        transition: all 0.4s;
+    }
+    .btn-white::after{
+        background-color:white;
+    }
+    .btn:hover::after{
+        transform:scaleX(1.4) scaleY(1.6);
+        opacity: 0;}
+.left1{
+            float:left;
+            margin-top:-65vh;
+            color:white;
+            padding:5vh;
+            font-size:1.7rem;
+            font-weight:700;
+            
+            animation-name: Moveinbottom;
+            animation-duration: 4s;
+        }
+        @keyframes Moveinbottom
+        {
+            0%{
+                opacity:0;
+                transform:skewY(15deg) skewX(5deg) scale(1.1);
+            }
+            
+            100%
+            {opacity: 1;
+                transform:translateY(1);
+            }
+        }
+        .left2{
+            float:left;
+            margin-top:-112vh;
+            color:white;
+            padding:17vh;
+            font-size:1.7rem;
+            font-weight:700;
+            
+            animation-name:Movein;
+            animation-duration: 6s;
+        }
+        @keyframes Movein
+        
+            { 
+                 0%{
+                opacity:0;
+                transform:skewY(-15deg) skewX(5deg) scale(1.1);
+            }
+            
+            100%
+            {opacity: 1;
+                transform:translateY(1);
+            }
+                
+            }
+            .right1{
+                float:right;
+                padding:-2vh;
+                margin-top:-92vh;
+                color:white;
+                padding:12vh;
+                font-size:1.7rem;
+                font-weight:700;
+                
+                animation-name:Movein2;
+                animation-duration: 8s;
+               }
+               @keyframes Movein2
+           
+               { 
+                    0%{
+                   opacity:0;
+                   transform:skewY(25deg) skewX(-25deg) scale(1.1);
+               }
+               
+               100%
+               {opacity: 1;
+                   transform:translateY(1);
+               }
+                   
+               }
+               .right2{
+                float:right;
+                margin-right:10vh;
+                margin-top:-52vh;
+                color:white;
+                padding:12vh;
+                font-size:1.7rem;
+                font-weight:700;
+                
+                animation-name:Movein3;
+                animation-duration:10s;
+               }
+               @keyframes Movein3
+        
+               { 
+                    0%{
+                   opacity:0;
+                   transform:skewY(-35deg) skewX(-25deg) scale(1.1);
+               }
+               
+               100%
+               {opacity: 1;
+                   transform:translateY(1);
+               }
+                   
+               }
+    
